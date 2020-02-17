@@ -5,9 +5,9 @@
  *  接続パスワード：admin123
  */ 
 drop database if exists hoteldb;
-drop user if exists hoteldb_admin@localhost;
+drop user if exists hoteldb_admin;
 create database hoteldb character set utf8;
-grant all privileges on hoteldb.* to 'hoteldb_admin'@'localhost' identified by 'admin123';
+grant all privileges on hoteldb.* to 'hoteldb_admin' identified by 'admin123';
 
 use hoteldb;
 
